@@ -1,11 +1,14 @@
 #include <iostream>
 #include "main_functions.h"
+#include <fstream>
 using namespace std;
 int main()
 {
+    
+    Menu();
     introduction();
     
-
+    
     string codeword = "coding";
     string answer = "______";
     int misses = 0;

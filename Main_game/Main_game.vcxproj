@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Main_game.cpp" />
     <ClCompile Include="define_functions.cpp" />
+    <ClCompile Include="Menu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main_functions.h" />
