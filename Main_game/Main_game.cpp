@@ -1,6 +1,7 @@
 #include <iostream>
 #include "main_functions.h"
 #include <fstream>
+
 using namespace std;
 int main()
 {
@@ -22,7 +23,7 @@ int main()
         display_misses(misses);
         display_status(incorrect, answer);
 
-        cout << "\n\nGuess: ";
+        cout <<"\n\nGuess: ";
         cin >> letter;
 
         for (int i = 0; i < codeword.size(); i++)

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "main_functions.h"
+#include <iomanip>
 
 using namespace std;
 
@@ -8,22 +9,26 @@ using namespace std;
 
 void introduction()
 {
-
-    cout << "Hangman: The game" << endl;
+    for (int i = 0; i < 3; i++)
+        cout << "\n" << endl;
+    cout << setw(130) << "Enjoy the game" << endl;
 
 }
 
 void display_misses(int misses)
-{
+{   
+    for (int i = 0; i < 3; i++)
+        cout << "\n" << endl;
     if (misses == 0)
     {
-        cout << "  +---+ " << endl;
-        cout << "  |   | " << endl;
-        cout << "      | " << endl;
-        cout << "      | " << endl;
-        cout << "      | " << endl;
-        cout << "      | " << endl;
-        cout << " ========= " << endl;
+
+        cout  << "  +---+ " << endl;
+        cout  << "  |   | " << endl;
+        cout  << "      | " << endl;
+        cout  << "      | " << endl;
+        cout  << "      | " << endl;
+        cout  << "      | " << endl;
+        cout  << " ========= " << endl;
     }
     else if (misses == 1)
     {
@@ -98,7 +103,7 @@ void display_status(vector<char> incorrect, string answer)
         cout << incorrect[i] << " ";
     }
 
-    cout << "\nCodeword:" << endl;
+    cout  <<  "\nCodeword:" << endl;
 
     for (int i = 0; i < answer.size(); i++)
     {
@@ -110,11 +115,11 @@ void end_game(string answer, string codeword)
 {
     if (answer == codeword)
     {
-        cout << "Good job you saved the man from being hanged!" << endl;
-        cout << "Congratulations!" << endl;
+        cout <<  "Good job you saved the man from being hanged!" << endl;
+        cout <<  "Congratulations!" << endl;
     }
     else
     {
-        cout << "Oh, NO the man was hanged!" << endl;
+        cout <<  "Oh, NO the man was hanged!" << endl;
     }
 }
