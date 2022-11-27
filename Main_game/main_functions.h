@@ -4,7 +4,7 @@
 
 using namespace std;
 
-//define functions
+// All functions are here
 
 void introduction();
 void display_misses(int misses);
