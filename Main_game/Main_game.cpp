@@ -17,7 +17,7 @@ int main()
     bool guess = false;
     char letter;
 
-
+    
     while (answer != codeword && misses < 7)
     {
         display_misses(misses);
