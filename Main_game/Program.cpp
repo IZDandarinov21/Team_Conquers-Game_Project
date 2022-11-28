@@ -162,27 +162,28 @@ void introduction()
 }
 
  
-// The logic behind the game
 
+
+vector<char> incorrect;
+string codeword = "appla";
+string answer = "______";
+int misses = 0;
+
+//Defining global variables so that the whole program can run without refrencing every single variable
 int main()
 {
-
+   
     Menu();
     introduction();
 
-
-    string codeword = "coding";
-    string answer = "______";
-    int misses = 0;
-    vector<char> incorrect;
     bool guess = false;
     char letter;
 
 
     while (answer != codeword && misses < 7)
     {
-        display_misses(misses);
-        display_status(incorrect, answer);
+        display_misses();
+        display_status();
 
         cout << "\n\nGuess: ";
         cin >> letter;
@@ -193,6 +194,10 @@ int main()
             {
                 answer[i] = letter;
                 guess = true;
+            }
+            if (letter == 'exit')
+            {
+                Menu();
             }
         }
         if (guess)
@@ -208,14 +213,15 @@ int main()
         guess = false;
     }
 
-    end_game(answer, codeword);
+    end_game();
 
     return 0;
 }
 
 
-void display_misses(int misses)
+void display_misses()
 {   
+   
     for (int i = 0; i < 3; i++)
         cout << "\n" << endl;
     if (misses == 0)
@@ -293,8 +299,9 @@ void display_misses(int misses)
 }
 
 
-void display_status(vector<char> incorrect, string answer)
+void display_status()
 {
+    
     cout << "Wrong answers:" << endl;
 
     for (int i = 0; i < incorrect.size(); i++)
@@ -310,8 +317,10 @@ void display_status(vector<char> incorrect, string answer)
     }
 }
 
-void end_game(string answer, string codeword)
+void end_game()
 {
+    string answer;
+    string codeword;
     if (answer == codeword)
     {
         cout <<  "Good job you saved the man from being hanged!" << endl;
@@ -321,4 +330,6 @@ void end_game(string answer, string codeword)
     {
         cout <<  "Oh, NO the man was hanged!" << endl;
     }
+    
 }
+

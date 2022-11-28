@@ -7,7 +7,7 @@ using namespace std;
 // All functions are here
 
 void introduction();
-void display_misses(int misses);
-void display_status(std::vector<char> incorrect, string answer);
-void end_game(string answer, string codeword);
+void display_misses();
+void display_status();
+void end_game();
 void Menu();
