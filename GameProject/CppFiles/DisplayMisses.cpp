@@ -1,13 +1,13 @@
 #include <iostream>
 #include <vector>
-#include "main_functions.h"
+#include "mainFunctions.h"
 #include <iomanip>
 
 using namespace std;
 
 
 
-void display_misses(int misses)
+void displayMisses(int misses)
 {
    
     for (int i = 0; i < 3; i++)

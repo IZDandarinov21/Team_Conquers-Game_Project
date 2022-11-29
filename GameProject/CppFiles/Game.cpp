@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "main_functions.h"
+#include "mainFunctions.h"
 #include <iomanip>
 
 
@@ -12,7 +12,7 @@
 void game()
 {
 
-    Menu();
+    menu();
     introduction();
     string codeword = "coding";
     string answer = "______";
@@ -25,8 +25,8 @@ void game()
 
     while (answer != codeword && misses < 7)
     {
-        display_misses(misses);
-        display_status(incorrect, codeword, answer);
+        displayMisses(misses);
+        displayStatus(incorrect, codeword, answer);
 
         cout << "\n\nGuess: ";
         cin >> letter;
@@ -53,7 +53,7 @@ void game()
         guess = false;
     }
 
-    end_game(codeword, answer);
+    endGame(codeword, answer);
 
 
 }

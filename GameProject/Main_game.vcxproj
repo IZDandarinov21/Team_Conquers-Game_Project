@@ -127,16 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="game.cpp" />
-    <ClCompile Include="display_misses.cpp" />
-    <ClCompile Include="display_status.cpp" />
-    <ClCompile Include="end_game.cpp" />
-    <ClCompile Include="introduction.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="DisplayMisses.cpp" />
+    <ClCompile Include="DisplayStatus.cpp" />
+    <ClCompile Include="EndGame.cpp" />
+    <ClCompile Include="Introduction.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="Menu.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="main_functions.h" />
+    <ClInclude Include="MainFunctions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

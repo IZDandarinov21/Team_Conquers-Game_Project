@@ -1,12 +1,12 @@
 #include <iostream>
 #include <vector>
-#include "main_functions.h"
+#include "mainFunctions.h"
 #include <iomanip>
 using namespace std;
 
 
 
-void end_game(string codeword, string answer)
+void endGame(string codeword, string answer)
 {
     
     if (answer == codeword)

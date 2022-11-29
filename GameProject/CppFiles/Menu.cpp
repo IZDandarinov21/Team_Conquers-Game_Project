@@ -1,10 +1,10 @@
 #include <iostream>
 #include <vector>
-#include "main_functions.h"
+#include "mainFunctions.h"
 #include <iomanip>
 using namespace std;
 
-void Menu()
+void menu()
 {
     int choice;
 

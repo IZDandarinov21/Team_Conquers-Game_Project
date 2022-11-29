@@ -1,10 +1,10 @@
 #include <iostream>
 #include <vector>
-#include "main_functions.h"
+#include "mainFunctions.h"
 #include <iomanip>
 using namespace std;
 
-void display_status(vector <char> incorrect, string codeword, string answer)
+void displayStatus(vector <char> incorrect, string codeword, string answer)
 {
     
     
