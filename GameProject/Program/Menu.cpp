@@ -10,7 +10,7 @@ void menu()
 
 
     system("Color B");
-    for (int i = 0; i < 7; i++)
+    for (int i = 0; i < 4; i++)
         cout << "\n" << endl;
     cout << setw(134) << "______ _             \n";
     cout << setw(134) << "| ___ \\ |            \n";
