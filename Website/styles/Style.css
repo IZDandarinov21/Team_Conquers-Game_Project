@@ -32,6 +32,8 @@ margin-left: 8vh;
     margin-top: -2vh;
     height: 80vh;
     width: 200vh;
+    position: relative;
+
 }
 .Button{
     position: absolute;
@@ -64,3 +66,51 @@ margin-left: 8vh;
 .wave{
     width: 100%;
 }
+.wave2{
+    width: 100%;
+}
+.Statement1{
+    height: 500px;
+    width: 280px;
+    margin-left: 140px;
+    margin-top: 100px;
+    background-color: hsl(0, 0%, 82%);
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+}
+.Statement2{
+    height: 500px;
+    width: 280px;
+    margin-left: 580px;
+    margin-top: 100px;
+    background-color: hsl(0, 0%, 82%);
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+}
+.Statement3{
+    height: 500px;
+    width: 280px;
+    margin-left: 1020px;
+    margin-top: 100px;
+    background-color: hsl(0, 0%, 82%);
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+}
+.Statement4{
+    height: 500px;
+    width: 280px;
+    margin-left: 1460px;
+    margin-top: 100px;
+    background-color: hsl(0, 0%, 82%);
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+}
+
