@@ -10,7 +10,7 @@ void menu()
 
 
     system("Color B");
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 7; i++)
         cout << "\n" << endl;
     cout << setw(134) << "______ _             \n";
     cout << setw(134) << "| ___ \\ |            \n";
@@ -20,21 +20,9 @@ void menu()
     cout << setw(134) << "\\_|   |_|\\__,_|\\__, |\n";
     cout << setw(134) << "                __/ |\n";
     cout << setw(134) << "               |___/ \n";
-    cout << setw(134) << "\n";
-    cout << setw(134) << "\n";
-    cout << setw(134) << "\n";
 
-    for (int i = 0; i < 1; i++)
-        cout << "\n" << endl;
-    cout << setw(140) << " _____       _   _                 \n";
-    cout << setw(140) << "|  _  |     | | (_)                \n";
-    cout << setw(140) << "| | | |_ __ | |_ _  ___  _ __  ___ \n";
-    cout << setw(140) << "| | | | '_ \\| __| |/ _ \\| '_ \\/ __|\n";
-    cout << setw(140) << "\\ \\_/ / |_) | |_| | (_) | | | \\__ \\\n";
-    cout << setw(140) << " \\___/| .__/ \\__|_|\\___/|_| |_|___/\n";
-    cout << setw(140) << "      | |                          \n";
-    cout << setw(140) << "      |_|                          \n";
 
+   
     for (int i = 0; i < 3; i++)
         cout << "\n" << endl;
     cout << setw(138) << " _____              _ _ _       \n";
@@ -67,16 +55,9 @@ void menu()
 
             system("cls");
             break;
-            // Settings window
-        case 2:
-            for (int i = 0; i < 3; i++)
-                cout << "\n" << endl;
-            system("cls");
-            cout << "\n";
-            cout << "\n";
-            break;
+            
             // Credits windwow
-        case 3:
+        case 2:
             for (int i = 0; i < 3; i++)
                 cout << "\n" << endl;
             system("cls");
@@ -92,9 +73,9 @@ void menu()
             cout << setw(140) << "|____|/|_____|/       |_____|/  \n";
             for (int i = 0; i < 3; i++)
                 cout << "\n" << endl;
-            cout << "                             ,//*(#(%#%###((*                              \n";
-            cout << "                      . **(##(##(%#%&#(#####%####*                         \n";
-            cout << "                  ..,*###%#%##&&###(%%%&%%#####%%##%,                     \n";
+            cout << "                             ,//*(#(%#%###((*                              " << setw(40) << "A\n";
+            cout << "                      . **(##(##(%#%&#(#####%####*                         " << setw(140) << "A\n";
+            cout << "                  ..,*###%#%##&&###(%%%&%%#####%%##%,                      \n";
             cout << "                   **/#%%%%##%%##%%#%%%##%%%&&%%%%##%##                    \n";
             cout << "                ... #%&%&%#%%%%%%&%%&%#%%&####%%%#%%%&%%#.                 \n";
             cout << "                 .(%#%%%%%####((((//((((((#%%%%%###%%%%%%#                 \n";
@@ -128,9 +109,11 @@ void menu()
             cout << "###################%######%####(/,,,*********///(##%%%%%###%%%%%%%#########\n";
             cout << "###################%%######%%%####,,,*,*,,,,,,###%%%%%#####%%%%%%%#########\n";
 
+
+
             // Exit window 
             break;
-        case 4: for (int i = 0; i < 3; i++)
+        case 3: for (int i = 0; i < 3; i++)
             cout << "\n" << endl;
             system("cls");
             cout << setw(126) << "Ok Bye\n";
