@@ -47,5 +47,46 @@ void status()
 
 	string blankWord(word.length(), '_'); //swaps each letter of the word with _ and it is stored in blankWord;
 
+
+	//end of random word generator
+
+
+
+	// a while loop to display the status of the player
+
+	while (attempts >= 0)
+	{
+
+		correctGuess = false; //reseting bool
+
+
+		cout << "Try to guess the word: \n";
+
+
+		cout << blankWord << endl;
+
+
+		cout << "You have " << attempts << " attempts \n";
+
+
+		if (guessedLetters[0] == '\0') //
+		{
+
+			cout << endl;
+
+		}
+		else
+		{
+			cout << "You have guessed: " << guessedLetters << endl;
+
+		}
+
+		cout << "\n\nYour guess: " << endl;
+
+
+		cin >> guess;
+
+
+
 	
 }
