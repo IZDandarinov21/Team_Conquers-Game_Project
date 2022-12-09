@@ -86,7 +86,38 @@ void status()
 
 		cin >> guess;
 
+		for (int i = 0; i < blankWord.length(); i++)
+		{
+
+			if (word[i] == guess) // checks if the word has the letter guess in it
+			{
+
+				blankWord[i] = guess;
 
 
-	
-}
+				correctGuess = true; // if it does the boolean correctGuess now has a value of true and the letter you have guessed replaces the space that is equal to 
+			}
+		}
+		if (word == blankWord) // if have every letter correct you win
+		{
+
+			cout << "Congratulations you have saved this man by guessing the word correctly: " << blankWord << endl;
+
+			break;
+		}
+		if (correctGuess == false) // your guess has to be incorrect in order to lower your attempts
+		{
+			attempts--;
+
+
+			cout << "You have guessed inccorrectly" << endl;
+		}
+		else
+		{
+
+			cout << "Your correct" << endl;
+		}
+
+
+	}
+}   
