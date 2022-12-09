@@ -118,6 +118,271 @@ void status()
 			cout << "Your correct" << endl;
 		}
 
+		switch (attempts)
+		{
+		case 6:
+		{
+
+			cout << setw(120) << " ___________.._______            \n";
+			cout << setw(120) << "| .__________))______|           \n";
+			cout << setw(120) << "| | / /      ||                  \n";
+			cout << setw(120) << "| |/ /       ||                  \n";
+			cout << setw(120) << "| | /        ||.-''.             \n";
+			cout << setw(119) << "| |/         |/  _  \\           \n";
+			cout << setw(120) << "| |          ||  `/,|            \n";
+			cout << setw(117) << "| |          (\\`_.'           \n";
+			cout << setw(120) << "| |         .-`--'.              \n";
+			cout << setw(119) << "| |        /Y . . Y\\            \n";
+			cout << setw(118) << "| |       // |   | \\\\          \n";
+			cout << setw(118) << "| |      //  | . |  \\\\         \n";
+			cout << setw(120) << "| |     ')   |   |   (`          \n";
+			cout << setw(120) << "| |          ||'||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(119) << "| |         / | | \\             \n";
+			cout << setw(120) << "'''''''''| _`-' `-' |''''''|     \n";
+			cout << setw(118) << "|'| ''''' \\ \\       '''''|'|   \n";
+			cout << setw(118) << "| |        \\ \\           | |   \n";
+			cout << setw(118) << ": :         \\ \\          : :   \n";
+			cout << setw(119) << " . .          `'          . .    \n";
+			break;
+		}
+		case 5:
+		{
+
+			cout << setw(120) << " ___________.._______            \n";
+			cout << setw(120) << "| .__________))______|           \n";
+			cout << setw(120) << "| | / /      ||                  \n";
+			cout << setw(120) << "| |/ /       ||                  \n";
+			cout << setw(120) << "| | /        ||.-''.             \n";
+			cout << setw(119) << "| |/         |/  _  \\           \n";
+			cout << setw(120) << "| |          ||  `/,|            \n";
+			cout << setw(117) << "| |          (\\`_.'           \n";
+			cout << setw(120) << "| |         .-`--'.              \n";
+			cout << setw(119) << "| |        /Y . . Y\\            \n";
+			cout << setw(118) << "| |       // |   | \\\\          \n";
+			cout << setw(118) << "| |      //  | . |  \\\\         \n";
+			cout << setw(120) << "| |     ')   |   |   (`          \n";
+			cout << setw(120) << "| |          ||'||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(119) << "| |         / | | \\             \n";
+			cout << setw(120) << "'''''''''| _`-' `-' |''''''|     \n";
+			cout << setw(118) << "|'| ''''' \\ \\       '''''|'|   \n";
+			cout << setw(118) << "| |        \\ \\           | |   \n";
+			cout << setw(118) << ": :         \\ \\          : :   \n";
+			cout << setw(119) << " . .          `'          . .    \n";
+
+
+			if (correctGuess == false) // if your guess is false the guess you have entered will be printed in this array
+			{
+				guessedLetters[0] = guess;
+			}
+
+
+			break;
+		}
+		case 4:
+		{
+			cout << setw(120) << " ___________.._______            \n";
+			cout << setw(120) << "| .__________))______|           \n";
+			cout << setw(120) << "| | / /      ||                  \n";
+			cout << setw(120) << "| |/ /       ||                  \n";
+			cout << setw(120) << "| | /        ||.-''.             \n";
+			cout << setw(119) << "| |/         |/  _  \\           \n";
+			cout << setw(120) << "| |          ||  `/,|            \n";
+			cout << setw(117) << "| |          (\\`_.'           \n";
+			cout << setw(120) << "| |         .-`--'.              \n";
+			cout << setw(119) << "| |        /Y . . Y\\            \n";
+			cout << setw(118) << "| |       // |   | \\\\          \n";
+			cout << setw(118) << "| |      //  | . |  \\\\         \n";
+			cout << setw(120) << "| |     ')   |   |   (`          \n";
+			cout << setw(120) << "| |          ||'||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(119) << "| |         / | | \\             \n";
+			cout << setw(120) << "'''''''''| _`-' `-' |''''''|     \n";
+			cout << setw(118) << "|'| ''''' \\ \\       '''''|'|   \n";
+			cout << setw(118) << "| |        \\ \\           | |   \n";
+			cout << setw(118) << ": :         \\ \\          : :   \n";
+			cout << setw(119) << " . .          `'          . .    \n";
+
+
+			if (correctGuess == false)
+			{
+				guessedLetters[1] = guess; // also the same as before just changin the positon of the index to the next one
+			}
+
+
+			break;
+		}
+		case 3:
+		{
+			cout << setw(120) << " ___________.._______            \n";
+			cout << setw(120) << "| .__________))______|           \n";
+			cout << setw(120) << "| | / /      ||                  \n";
+			cout << setw(120) << "| |/ /       ||                  \n";
+			cout << setw(120) << "| | /        ||.-''.             \n";
+			cout << setw(119) << "| |/         |/  _  \\           \n";
+			cout << setw(120) << "| |          ||  `/,|            \n";
+			cout << setw(117) << "| |          (\\`_.'           \n";
+			cout << setw(120) << "| |         .-`--'.              \n";
+			cout << setw(119) << "| |        /Y . . Y\\            \n";
+			cout << setw(118) << "| |       // |   | \\\\          \n";
+			cout << setw(118) << "| |      //  | . |  \\\\         \n";
+			cout << setw(120) << "| |     ')   |   |   (`          \n";
+			cout << setw(120) << "| |          ||'||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(119) << "| |         / | | \\             \n";
+			cout << setw(120) << "'''''''''| _`-' `-' |''''''|     \n";
+			cout << setw(118) << "|'| ''''' \\ \\       '''''|'|   \n";
+			cout << setw(118) << "| |        \\ \\           | |   \n";
+			cout << setw(118) << ": :         \\ \\          : :   \n";
+			cout << setw(119) << " . .          `'          . .    \n";
+
+
+			if (correctGuess == false)
+
+
+
+			{
+				guessedLetters[2] = guess; // same here
+			}
+			break;
+		}
+		case 2:
+		{
+			cout << setw(120) << " ___________.._______            \n";
+			cout << setw(120) << "| .__________))______|           \n";
+			cout << setw(120) << "| | / /      ||                  \n";
+			cout << setw(120) << "| |/ /       ||                  \n";
+			cout << setw(120) << "| | /        ||.-''.             \n";
+			cout << setw(119) << "| |/         |/  _  \\           \n";
+			cout << setw(120) << "| |          ||  `/,|            \n";
+			cout << setw(117) << "| |          (\\`_.'           \n";
+			cout << setw(120) << "| |         .-`--'.              \n";
+			cout << setw(119) << "| |        /Y . . Y\\            \n";
+			cout << setw(118) << "| |       // |   | \\\\          \n";
+			cout << setw(118) << "| |      //  | . |  \\\\         \n";
+			cout << setw(120) << "| |     ')   |   |   (`          \n";
+			cout << setw(120) << "| |          ||'||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(119) << "| |         / | | \\             \n";
+			cout << setw(120) << "'''''''''| _`-' `-' |''''''|     \n";
+			cout << setw(118) << "|'| ''''' \\ \\       '''''|'|   \n";
+			cout << setw(118) << "| |        \\ \\           | |   \n";
+			cout << setw(118) << ": :         \\ \\          : :   \n";
+			cout << setw(119) << " . .          `'          . .    \n";
+
+
+
+			if (correctGuess == false)
+			{
+				guessedLetters[3] = guess; // here
+			}
+
+
+			break;
+		}
+		case 1:
+		{
+			cout << setw(120) << " ___________.._______            \n";
+			cout << setw(120) << "| .__________))______|           \n";
+			cout << setw(120) << "| | / /      ||                  \n";
+			cout << setw(120) << "| |/ /       ||                  \n";
+			cout << setw(120) << "| | /        ||.-''.             \n";
+			cout << setw(119) << "| |/         |/  _  \\           \n";
+			cout << setw(120) << "| |          ||  `/,|            \n";
+			cout << setw(117) << "| |          (\\`_.'           \n";
+			cout << setw(120) << "| |         .-`--'.              \n";
+			cout << setw(119) << "| |        /Y . . Y\\            \n";
+			cout << setw(118) << "| |       // |   | \\\\          \n";
+			cout << setw(118) << "| |      //  | . |  \\\\         \n";
+			cout << setw(120) << "| |     ')   |   |   (`          \n";
+			cout << setw(120) << "| |          ||'||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(119) << "| |         / | | \\             \n";
+			cout << setw(120) << "'''''''''| _`-' `-' |''''''|     \n";
+			cout << setw(118) << "|'| ''''' \\ \\       '''''|'|   \n";
+			cout << setw(118) << "| |        \\ \\           | |   \n";
+			cout << setw(118) << ": :         \\ \\          : :   \n";
+			cout << setw(119) << " . .          `'          . .    \n";
+
+
+
+			if (correctGuess == false)
+			{
+				guessedLetters[4] = guess; // and here
+			}
+
+
+			break;
+		}
+		case 0:
+		{
+			cout << setw(120) << " ___________.._______            \n";
+			cout << setw(120) << "| .__________))______|           \n";
+			cout << setw(120) << "| | / /      ||                  \n";
+			cout << setw(120) << "| |/ /       ||                  \n";
+			cout << setw(120) << "| | /        ||.-''.             \n";
+			cout << setw(119) << "| |/         |/  _  \\           \n";
+			cout << setw(120) << "| |          ||  `/,|            \n";
+			cout << setw(117) << "| |          (\\`_.'           \n";
+			cout << setw(120) << "| |         .-`--'.              \n";
+			cout << setw(119) << "| |        /Y . . Y\\            \n";
+			cout << setw(118) << "| |       // |   | \\\\          \n";
+			cout << setw(118) << "| |      //  | . |  \\\\         \n";
+			cout << setw(120) << "| |     ')   |   |   (`          \n";
+			cout << setw(120) << "| |          ||'||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(120) << "| |          || ||               \n";
+			cout << setw(119) << "| |         / | | \\             \n";
+			cout << setw(120) << "'''''''''| _`-' `-' |''''''|     \n";
+			cout << setw(118) << "|'| ''''' \\ \\       '''''|'|   \n";
+			cout << setw(118) << "| |        \\ \\           | |   \n";
+			cout << setw(118) << ": :         \\ \\          : :   \n";
+			cout << setw(119) << " . .          `'          . .    \n";
+
+
+			attempts = -1; // after all the attempts are wasted just set their value to -1 so that the game can immediately end
+
+
+
+			break;
+
+		}
+
+
+		default:
+
+
+			cout << "Error" << endl; // in case there is an error (this should't be displayed)
+
+		}
+
+	}
+	if (attempts < 0)
+	{
+
+		cout << "Game over!" << endl;
+
+
+		cout << "\nThe word was: \n\n" << endl;
+
+
+		cout << word;
+
+
 
 	}
 }   
