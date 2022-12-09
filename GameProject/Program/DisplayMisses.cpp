@@ -14,14 +14,30 @@ void displayMisses(int misses)
         cout << "\n" << endl;
     if (misses == 0)
     {
-
-        cout << "  +---+ " << endl;
-        cout << "  |   | " << endl;
-        cout << "      | " << endl;
-        cout << "      | " << endl;
-        cout << "      | " << endl;
-        cout << "      |" << endl;
-        cout << " ========= " << endl;
+         
+        cout << setw(120) << " ___________.._______            \n";
+        cout << setw(120) << "| .__________))______|           \n";
+        cout << setw(120) << "| | / /      ||                  \n";
+        cout << setw(120) << "| |/ /       ||                  \n";
+        cout << setw(120) << "| | /        ||.-''.             \n";
+        cout << setw(119) << "| |/         |/  _  \\           \n";
+        cout << setw(120) << "| |          ||  `/,|            \n";
+        cout << setw(117) << "| |          (\\`_.'           \n";
+        cout << setw(120) << "| |         .-`--'.              \n";
+        cout << setw(119) << "| |        /Y . . Y\\            \n";
+        cout << setw(118) << "| |       // |   | \\\\          \n";
+        cout << setw(118) << "| |      //  | . |  \\\\         \n";
+        cout << setw(120) << "| |     ')   |   |   (`          \n";
+        cout << setw(120) << "| |          ||'||               \n";
+        cout << setw(120) << "| |          || ||               \n";
+        cout << setw(120) << "| |          || ||               \n";
+        cout << setw(120) << "| |          || ||               \n";
+        cout << setw(119) << "| |         / | | \\             \n";
+        cout << setw(120) << "'''''''''| _`-' `-' |''''''|     \n";
+        cout << setw(118) << "|'| ''''' \\ \\       '''''|'|   \n";
+        cout << setw(118) << "| |        \\ \\           | |   \n";
+        cout << setw(118) << ": :         \\ \\          : :   \n";
+        cout << setw(119) << " . .          `'          . .    \n";
     }
     else if (misses == 1)
     {
