@@ -1,2 +1,8 @@
-﻿  DisplayMisses.cpp
-  Main_game.vcxproj -> C:\Users\ATApostolov21\source\repos\Team_Conquers-Game_Project\GameProject\Program\x64\Debug\Main_game.exe
+﻿  Game.cpp
+  Introduction.cpp
+  Program.cpp
+  Menu.cpp
+  Status.cpp
+D:\Team_Conquers-Game_Project\GameProject\Program\Status.cpp(30,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  Main_game.vcxproj -> D:\Team_Conquers-Game_Project\GameProject\Program\x64\Debug\Main_game.exe

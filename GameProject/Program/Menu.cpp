@@ -1,6 +1,4 @@
 #include <iostream>
-#include <vector>
-#include "mainFunctions.h"
 #include <iomanip>
 using namespace std;
 

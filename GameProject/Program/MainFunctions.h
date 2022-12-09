@@ -14,3 +14,4 @@ void menu();
 void game();
 void lockScreen();
 void startGame();
+void status();

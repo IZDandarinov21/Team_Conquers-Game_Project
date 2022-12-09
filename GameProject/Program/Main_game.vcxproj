@@ -128,12 +128,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
-    <ClCompile Include="DisplayMisses.cpp" />
-    <ClCompile Include="DisplayStatus.cpp" />
-    <ClCompile Include="EndGame.cpp" />
     <ClCompile Include="Introduction.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Status.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainFunctions.h" />
