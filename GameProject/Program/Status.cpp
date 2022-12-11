@@ -83,7 +83,7 @@ void status()
 
 		cout << "\n\nYour guess: " << endl;
 
-
+	
 		cin >> guess;
 
 		for (int i = 0; i < blankWord.length(); i++)

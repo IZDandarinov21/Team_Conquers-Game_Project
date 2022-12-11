@@ -67,7 +67,7 @@ using namespace std;
         cin >> mainChoice;
 
 
-        if (mainChoice == "RUN")
+        if (mainChoice == "RUN" or "run")
         {
             system("cls");
 
