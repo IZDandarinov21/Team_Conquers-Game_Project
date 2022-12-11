@@ -85,6 +85,7 @@ void status()
 
 	
 		cin >> guess;
+		
 
 		for (int i = 0; i < blankWord.length(); i++)
 		{
@@ -97,6 +98,7 @@ void status()
 
 				correctGuess = true; // if it does the boolean correctGuess now has a value of true and the letter you have guessed replaces the space that is equal to 
 			}
+			
 		}
 		if (word == blankWord) // if have every letter correct you win
 		{
