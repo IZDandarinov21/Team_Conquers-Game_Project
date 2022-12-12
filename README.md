@@ -30,7 +30,12 @@
     
 *This repo is all about our Game_of_Words Project. Our task was to create a game in C++ . We have decided to represents the game "hangman" presented in electronic form with an interesting design for the player. Our team has tried to provide the enjoyment of the game even as it is on paper. We have also created one page website where you can download the program.*   
 
+## ⚙ Access
 
+*You can access our website by pasting this link into your browser.*
+```
+https://sysolakov20.github.io/Team-Conquers-Website-Host/
+```
     
 
  ## 🎬 Demo of the project
