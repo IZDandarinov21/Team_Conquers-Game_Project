@@ -4,21 +4,24 @@
 #include <cstdlib>
 #include <fstream>
 #include <iomanip>
+#include "MainFunctions.h"
 
 using namespace std;
 
 void status()
 {
-	//variables used in the game
-	int attempts = 6; //number of tries
+	int themeChoice; // variable for selectiong your theme
+	int exit; // variable used to play the game agin or go back to the menu(but only if you guess the word incorrectly)
+	int play; // variable used to play the game agin or go back to the menu(only if get guess the word correctly)
+	int attempts = 5; //number of tries
 	char guess;  // technically the answer that you will give
-	char guessedLetters[7]; // array for letters that have been given as an anwser has to be larger than attempts
-	guessedLetters[0] = '\0'; // first index will be set to null terminator.(null terminators usually declare the end of the string not the array and their lenght
-	for (int i = 1; i < 6; i++)
+	char guessedLetters[6]; // array for letters that have been given as an anwser has to be larger than attempts
+	guessedLetters[0] = '\0'; // first index will be set to null terminator.(null terminators usually declare the end of the string not the array and their lenght)
+	for (int i = 1; i < 5; i++)
 	{
 		guessedLetters[i] = '-'; // the whole array is now just the syb
 	}
-	guessedLetters[6] = '\0';
+	guessedLetters[5] = '\0';
 
 	bool correctGuess = false;
 
@@ -26,12 +29,36 @@ void status()
 
 	string wordList[20]; // the array with all the words
 
-	srand(time(NULL)); //creates a random seed to use from the word array, time(NULL) represent the current time
+	srand((unsigned int)time(0)); //creates a random seed to use from the word array, time(NULL) represent the current time
 
 	ifstream randomWord; //reads a random variable
+	
+	cout << "aaaaa" << endl;
+	cin >> themeChoice;
+	if (themeChoice == 1)
+	{
+		randomWord.open("codingTheme.txt"); // read whole file and stores it in randomWord
+	}
+	if (themeChoice == 2)
+	{
+		randomWord.open("spaceTheme.txt"); // read whole file and stores it in randomWord
+	}
+	if (themeChoice == 3)
+	{
+		randomWord.open("foodTheme.txt"); // read whole file and stores it in randomWord
+	}
+	if (themeChoice != 1 && themeChoice != 2 && themeChoice != 3)
+	{
+		system("cls");
+		introduction();
+		status();
+	}
 
-	randomWord.open("Wordlist.txt"); // read whole file and stores it in randomWord
-
+	
+	
+	
+	
+	
 	for (int i = 0; i < 20; i++)
 	{
 
@@ -121,8 +148,14 @@ void status()
 
 			cout << "Congratulations you have saved this man by guessing the word correctly: " << blankWord << endl;
 
+			
+			cout << setw(120) << "Play again or Go to Menu" << endl;
+
 			break;
 		}
+		
+
+		
 		if (correctGuess == false) // your guess has to be incorrect in order to lower your attempts
 		{
 			attempts--;
@@ -153,35 +186,7 @@ void status()
 
 		switch (attempts)
 		{
-		case 6:
-		{
-			for (int i = 0; i < 3; i++)
-				cout << "\n" << endl;
-			cout << setw(140) << " ___________.._______            \n";
-			cout << setw(140) << "| .__________))______|           \n";
-			cout << setw(140) << "| | / /      ||                  \n";
-			cout << setw(140) << "| |/ /       ||                  \n";
-			cout << setw(140) << "| | /        ||.-''.             \n";
-			cout << setw(139) << "| |/         |/  _  \\           \n";
-			cout << setw(140) << "| |          ||  `/,|            \n";
-			cout << setw(137) << "| |          (\\`_.'           \n";
-			cout << setw(140) << "| |         .-`--'.              \n";
-			cout << setw(139) << "| |        /Y . . Y\\            \n";
-			cout << setw(138) << "| |       // |   | \\\\          \n";
-			cout << setw(138) << "| |      //  | . |  \\\\         \n";
-			cout << setw(140) << "| |     ')   |   |   (`          \n";
-			cout << setw(140) << "| |          ||'||               \n";
-			cout << setw(140) << "| |          || ||               \n";
-			cout << setw(140) << "| |          || ||               \n";
-			cout << setw(140) << "| |          || ||               \n";
-			cout << setw(139) << "| |         / | | \\             \n";
-			cout << setw(140) << "'''''''''| _`-' `-' |''''''|     \n";
-			cout << setw(138) << "|'| ''''' \\ \\       '''''|'|   \n";
-			cout << setw(138) << "| |        \\ \\           | |   \n";
-			cout << setw(138) << ": :         \\ \\          : :   \n";
-			cout << setw(139) << " . .          `'          . .    \n";
-			
-		}
+		
 		case 5:
 		{
 			for (int i = 0; i < 3; i++)
@@ -211,11 +216,7 @@ void status()
 			cout << setw(139) << " . .          `'          . .    \n";
 
 
-			if (correctGuess == false) // if your guess is false the guess you have entered will be printed in this array
-			{
-				guessedLetters[0] = guess;
-			}
-
+			
 
 			break;
 		}
@@ -247,11 +248,11 @@ void status()
 			cout << setw(138) << ": :         \\ \\          : :   \n";
 			cout << setw(139) << " . .          `'          . .    \n";
 
-
-			if (correctGuess == false)
+			if (correctGuess == false) // if your guess is false the guess you have entered will be printed in this array
 			{
-				guessedLetters[1] = guess; // also the same as before just changin the positon of the index to the next one
+				guessedLetters[0] = guess;
 			}
+			
 
 
 			break;
@@ -284,14 +285,11 @@ void status()
 			cout << setw(138) << ": :         \\ \\          : :   \n";
 			cout << setw(139) << " . .          `'          . .    \n";
 
-
 			if (correctGuess == false)
-
-
-
 			{
-				guessedLetters[2] = guess; // same here
+				guessedLetters[1] = guess; // also the same as before just changin the positon of the index to the next one
 			}
+			
 			break;
 		}
 		case 2:
@@ -322,12 +320,15 @@ void status()
 			cout << setw(138) << ": :         \\ \\          : :   \n";
 			cout << setw(139) << " . .          `'          . .    \n";
 
-
-
 			if (correctGuess == false)
+
+
+
 			{
-				guessedLetters[3] = guess; // here
+				guessedLetters[2] = guess; // same here
 			}
+
+			
 
 
 			break;
@@ -359,13 +360,13 @@ void status()
 			cout << setw(138) << "| |        \\ \\           | |   \n";
 			cout << setw(138) << ": :         \\ \\          : :   \n";
 			cout << setw(139) << " . .          `'          . .    \n";
-
-
-
 			if (correctGuess == false)
 			{
-				guessedLetters[4] = guess; // and here
+				guessedLetters[3] = guess; // here
 			}
+
+
+			
 
 
 			break;
@@ -423,9 +424,50 @@ void status()
 		cout << "\nThe word was: \n\n" << endl;
 
 
-		cout << word;
+		cout << word << endl;
+
+		cout << setw(120) << "Play again or Go back to menu" << endl;
+
+		
 
 
+	}
+	cin >> exit;
+	while (exit != 5 && exit != 6)
+	{
+		cin >> exit;
+	}
+	if (exit == 5)
+	{
+		system("cls");
+		introduction();
+		status();
+	}
+	if (exit == 6)
+	{
+		system("cls");
+		menu();
+	}
+	
+	if (word == blankWord)
+	{
 
+		cin >> play;
+		while (play != 5 && play != 6)
+		{
+			cin >> play;
+		}
+		if (play == 5)
+		{
+			system("cls");
+			introduction();
+			status();
+		}
+		if (play == 6)
+		{
+			system("cls");
+			menu();
+		}
+		
 	}
 }   

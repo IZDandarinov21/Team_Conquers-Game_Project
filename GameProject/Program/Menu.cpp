@@ -101,6 +101,7 @@ void menu()
             cout << "\n" << endl;
             system("cls");
             cout << setw(126) << "Ok Bye\n";
+            
         }
 
 

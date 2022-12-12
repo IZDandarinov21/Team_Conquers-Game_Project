@@ -1,3 +1,2 @@
 ﻿  Status.cpp
-D:\Team_Conquers-Game_Project\GameProject\Program\Status.cpp(29,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Main_game.vcxproj -> D:\Team_Conquers-Game_Project\GameProject\Program\x64\Debug\Main_game.exe
