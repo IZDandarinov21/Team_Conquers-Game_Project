@@ -21,12 +21,10 @@
     <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/>
     <img src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png"/>
  <img src="https://img.icons8.com/fluency/48/000000/visual-studio-2019.png"/>
-  <img src="https://img.icons8.com/color/48/000000/figma--v1.png"/>
   <img src="https://img.icons8.com/fluency/48/null/microsoft-word-2019.png"/>
   <img src="https://img.icons8.com/color/48/null/microsoft-excel-2019--v1.png"/>
   <img src="https://img.icons8.com/color/48/null/microsoft-powerpoint-2019--v1.png"/>
   <img src="https://img.icons8.com/fluency/48/null/microsoft-teams-2019.png"/>
-  <img src="https://img.icons8.com/fluency/48/null/discord-logo.png"/>
     
 ## 📋 Description:
     
@@ -50,9 +48,5 @@ Or by pasting the following code in your CMD:
 https://github.com/IZDandarinov21/Team_Conquers-Game_Project.git
 
 ```
-## 📎 Program Diagram:
 
-<p align="center">
-<img src="https://cdn.discordapp.com/attachments/1051489445196595210/1051668943057723432/diagramProject.png" width = "2500px" >
-</p>
 
