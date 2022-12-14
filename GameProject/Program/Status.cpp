@@ -566,6 +566,7 @@ void status()
 		for (int i = 0; i < 1; i++)
 			cout << "\n" << endl;
 
+		
 		cout << setw(125) << "...";
 
 
@@ -573,7 +574,11 @@ void status()
 	cin >> exit;
 	while (exit != 5 && exit != 6)
 	{
+		for (int i = 0; i < 1; i++)
+			cout << "\n" << endl;
+		cout << setw(125) << "...";
 		cin >> exit;
+		
 	}
 	if (exit == 5)
 	{
